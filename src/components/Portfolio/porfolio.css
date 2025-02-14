@@ -1,0 +1,42 @@
+.portfolio-main {
+  position: relative;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.portfolio-main::after,
+.portfolio-main::before {
+  content: "";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 28rem;
+  background: #9999ff;
+  position: absolute;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+.portfolio-main::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+.portfolio-main::before {
+  background: #9999ff;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+
+.portfolio-main .flex button {
+  background: #130f2a;
+  border: 1px solid #0066ff;
+  color: #fff;
+  margin-right: 0.3rem;
+}
+@media (max-width: 320px) {
+  .portfolio-main .flex button {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+}

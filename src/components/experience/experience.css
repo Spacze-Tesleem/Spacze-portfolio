@@ -1,0 +1,81 @@
+.experience-main {
+  position: relative;
+  margin: 4rem 0;
+}
+
+.experience-main::after,
+.experience-main::before {
+  content: "";
+  width: 28rem;
+  height: 28rem;
+  border-radius: 28rem;
+  background: #9999ff;
+  position: absolute;
+  z-index: -1;
+  filter: blur(200px);
+}
+
+.experience-main::after {
+  top: -3rem;
+  left: -5rem;
+}
+
+.experience-main::before {
+  background: #9999ff;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+.experience-main h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9933ff;
+  border-radius: 0.65rem;
+  background: #130f2a;
+  position: absolute;
+  top: 55%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.arrow-left {
+  left: -1.5rem;
+}
+.arrow-right {
+  right: -1.5rem;
+}
+
+@media (max-width: 1025px) {
+  .arrow-right {
+    right: 0rem;
+  }
+
+  .arrow-left {
+    left: 0rem;
+  }
+}
+@media (max-width: 768px) {
+  .experience-main {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .arrow-left {
+    left: -1rem;
+  }
+  .arrow-right {
+    right: -1rem;
+  }
+}

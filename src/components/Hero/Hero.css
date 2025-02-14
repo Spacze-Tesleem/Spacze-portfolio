@@ -1,0 +1,178 @@
+.hero-main {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-main::after,
+.hero-main::before {
+    content: "";
+    width: 28.123rem;
+    height: 28.123rem;
+    border-radius: 28.123rem;
+    background: #9999ff;
+    position: absolute;
+    z-index: -1;
+    filter: blur(225px);
+}
+
+.hero-main::after {
+    top: -3rem;
+    left: -5rem;
+}
+
+.hero-main::before{
+    bottom: 2rem;
+    right: 0rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p{
+    width: 80vh;
+    font-size: 1rem;
+    font-weight: 400;
+    list-style: 2;
+}
+
+.hero-img{
+   flex: 1;
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   margin-top: 5rem;
+}
+.hero-img > div{
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.hero-img > div > img.spacze{
+    width: 25rem;
+    transition: all .3s ease;
+    border-radius: 15px 5px;
+}
+
+.techIcon {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #5853ba;
+}
+
+.techIcon img{
+    width: 3rem;
+    height: auto;
+    transform: all 0.3s ease;
+}
+
+.hero-img > div > img:hover,
+.techIcon img:hover {
+    transform: translateY(-0.5rem);
+    transition: all 0.4s ease;
+}
+
+@media (max-width: 1025px){
+    .hero-content h2{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    .hero-img > div > div > img{
+        width: 20rem;
+    }
+
+    .techIcon{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .techIcon img{
+        width: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main {
+        flex-direction: column;
+    }
+
+    .hero-img {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .hero-content h2,
+    .hero-content p{
+        width: auto;
+        text-align: center;
+    }
+
+    .hero-main::after,
+    .hero-main::before{
+        content: "";
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .hero-main::after{
+        top: 0rem;
+        left: 0rem;
+    }
+
+    .hero-main::before{
+        bottom: 2rem;
+        right: 0;
+    }
+}
+
+@media (max-width:600px) {
+    .hero-content h2{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    .hero-content p{
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+
+    .hero-img {
+        gap: 1rem;
+    }
+    .hero-img > div{
+        gap: 1rem;
+    }
+
+    .hero-img > div > img{
+        width: 16rem !important;
+    }
+
+    .techIcon {
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+
+    .techIcon img{
+        width: 2rem;
+    }
+}
+
