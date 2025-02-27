@@ -13,6 +13,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
+          {/* Logo and Netlify Badge */}
           <div className="flex items-center flex-shrink-0">
             <img
               src={logo}
@@ -20,8 +21,21 @@ const Navbar = () => {
               width={160}
               style={{ borderRadius: "15px 5px 15px 5px" }}
             />
+            <div style={{ display: "none" }}>
+              <a
+                href="https://app.netlify.com/sites/spacze7/deploys"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://api.netlify.com/api/v1/badges/e44b0413-7d75-47ce-8fce-009b983ff6cd/deploy-status"
+                  alt="Netlify Status"
+                />
+              </a>
+            </div>
           </div>
 
+          {/* Desktop Navigation Items */}
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
@@ -32,6 +46,7 @@ const Navbar = () => {
             ))}
           </ul>
 
+          {/* Contact Button */}
           <div className="hidden lg:flex justify-center space-x-12 items-center">
             <a
               href="#"
@@ -40,12 +55,16 @@ const Navbar = () => {
               Contact Me
             </a>
           </div>
+
+          {/* Mobile Menu Toggle */}
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}
             </button>
           </div>
         </div>
+
+        {/* Mobile Navigation Drawer */}
         {mobileDrawerOpen && (
           <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul>
