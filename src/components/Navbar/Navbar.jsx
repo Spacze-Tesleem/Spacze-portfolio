@@ -1,4 +1,3 @@
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../../function/data";
@@ -15,14 +14,20 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            im
+            <img
+              src={logo}
+              alt="Logo"
+              width={160}
+              style={{ borderRadius: "15px 5px 15px 5px" }}
+            />
           </div>
 
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a>{item.link}</a>
-                {/* Change a to Link */}
+                <a href="#" className="hover:text-indigo-600">
+                  {item.name}
+                </a>
               </li>
             ))}
           </ul>
@@ -46,8 +51,9 @@ const Navbar = () => {
             <ul>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a>{item.link}</a>
-                  {/* Change a to Link */}
+                  <a href="#" className="hover:text-indigo-600">
+                    {item.name}
+                  </a>
                 </li>
               ))}
             </ul>
