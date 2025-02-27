@@ -2,6 +2,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../../function/data";
+import logo from "../../assets/logo.jpeg";
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
       <div className="container px-4 mx-auto relative text-sm">
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
-            <span className="text-xl tracking-tight">Spacze</span>
+            im
           </div>
 
           <ul className="hidden lg:flex ml-14 space-x-12">
