@@ -8,8 +8,12 @@ const Project = ({ filteredProjects }) => {
           key={project.id}
           className="p-4 border rounded shadow hover:shadow-lg"
         >
-          <img src={project.img} alt="" />
-          <h3 className="text-xl font-semibold">{project.title}</h3>
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-48 object-cover rounded"
+          />
+          <h3 className="text-xl font-semibold mt-2">{project.title}</h3>
           <p className="text-gray-600">{project.category}</p>
         </div>
       ))}

@@ -3,6 +3,7 @@ import Project from "./projects/project";
 import { Projects } from "../../function/data";
 import "./porfolio.css"
 
+
 // Updated Tabs
 const tabs = [
   { id: 1, name: "All" },
