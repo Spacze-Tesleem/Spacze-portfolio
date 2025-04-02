@@ -18,7 +18,7 @@ export default function ContactSection() {
           </div>
         </div>
         <div className="lg:w-1/2 xl:w-7/12 pt-3 md:pt-4 lg:pt-3 mt-3">
-          <form className="space-y-4">
+          <form className="space-y-4" netlify>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label htmlFor="fn" className="block text-sm font-medium">
