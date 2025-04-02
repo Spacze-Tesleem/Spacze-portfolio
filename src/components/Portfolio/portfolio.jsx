@@ -10,6 +10,7 @@ const tabs = [
   { id: 2, name: "Projects" },
   { id: 3, name: "Dev Tools" },
   { id: 4, name: "Design" },
+  { id: 5, name: "Clients" },
 ];
 
 function Portfolio() {

@@ -14,7 +14,18 @@ const Project = ({ filteredProjects }) => {
             className="w-full h-48 object-cover rounded"
           />
           <h3 className="text-xl font-semibold mt-2">{project.title}</h3>
-          <p className="text-gray-600">{project.category}</p>
+          <p className="text-[#d7e3fc]">{project.category}</p>
+          <p className="text-[#f9f6f2] mt-2">{project.description}</p>
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#1e3d58] mt-2 inline-block"
+            >
+              View Project
+            </a>
+          )}
         </div>
       ))}
     </div>
