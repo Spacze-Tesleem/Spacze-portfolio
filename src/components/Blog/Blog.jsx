@@ -1,8 +1,8 @@
-import Blog from "../../assets/blog1.png";
-import Blog1 from "../../assets/blog2.png";
-import Blog2 from "../../assets/blog3.png";
-import Blog3 from "../../assets/blog4.png";
-import Blog4 from "../../assets/blog5.png";
+import Blog from "./blog1.png";
+import Blog1 from "./blog2.png";
+import Blog2 from "./blog3.png";
+import Blog3 from "./blog4.png";
+import Blog4 from "./blog5.png";
 
 const articles = [
   {
