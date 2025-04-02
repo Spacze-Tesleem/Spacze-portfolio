@@ -5,6 +5,7 @@ import Skill from "./components/Skill/Skill";
 import WorkExperience from "./components/experience/experience";
 import Portfolio from "./components/Portfolio/portfolio";
 import Contact from "./components/Contact/contact";
+import BlogGrid from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Skill />
           <WorkExperience />
           <Portfolio />
+          <BlogGrid />
           <Contact />
         </div>
       </section>

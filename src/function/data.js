@@ -9,7 +9,10 @@ import Project8 from "../assets/lifa.png";
 import Project9 from "../assets/rof.png";
 import Project10 from "../assets/jerico.png";
 import Project11 from "../assets/Dms.png";
-
+import Frontend from "../assets/frontend.png";
+import Backend from "../assets/backend.png";
+import Tools from "../assets/tools.png";
+import Accounting from "../assets/accounting.png";
 export const navItems = [
   { name: "Home" },
   { name: "Skill" },
@@ -35,24 +38,36 @@ export const skillsData = {
     { skill: "Webpack", percentage: 60 },
     { skill: "Responsive Design", percentage: 70 },
   ],
+  accounts: [
+    { skill: "Sage", percentage: 85 },
+    { skill: "Cost Analysis", percentage: 75 },
+    { skill: "Taxation", percentage: 60 },
+    { skill: "", percentage: 70 },
+  ],
 };
 
 export const Skills = [
   {
     title: "Frontend",
-    icon: "./assets/images/frontend-icon.png",
+    icon: Frontend,
     skills: skillsData.frontend,
   },
   {
     title: "Backend",
-    icon: "./assets/images/backend-icon.png",
+    icon: Backend,
     skills: skillsData.backend,
   },
   {
     title: "Tools",
-    icon: "./assets/images/tools-icon.png",
+    icon: Tools,
     skills: skillsData.tools,
   },
+  {
+    title: "Accounting",
+    icon: Accounting,
+    skills: skillsData.accounts,
+  },
+
 ];
 
 export const WORK_EXPERIENCE = {
